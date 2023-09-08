@@ -1,0 +1,82 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.fankes.maven-artifact-test",
+    "module": "maven-artifact-test",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "maven-artifact-test-1.0.0.jar",
+          "url": "maven-artifact-test-1.0.0.jar",
+          "size": 2182,
+          "sha512": "81aca074ea8c1975c3ac6438700d570ba2dee974d066b977b6a3db0b73c734e6ad5256e0ccfacde8d6c5d8bf6c049793a835cf2091e57bf7136208d52c169826",
+          "sha256": "94a8169aafbe9be0ecf78dce1ceff4a8cd69e790f8209831a8a5438c5d5f6f90",
+          "sha1": "1bf135373210c53fbce3adee07d316cc1f1a13ce",
+          "md5": "cde5ede431ff0a7ae030655e34ee1919"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "maven-artifact-test-1.0.0.jar",
+          "url": "maven-artifact-test-1.0.0.jar",
+          "size": 2182,
+          "sha512": "81aca074ea8c1975c3ac6438700d570ba2dee974d066b977b6a3db0b73c734e6ad5256e0ccfacde8d6c5d8bf6c049793a835cf2091e57bf7136208d52c169826",
+          "sha256": "94a8169aafbe9be0ecf78dce1ceff4a8cd69e790f8209831a8a5438c5d5f6f90",
+          "sha1": "1bf135373210c53fbce3adee07d316cc1f1a13ce",
+          "md5": "cde5ede431ff0a7ae030655e34ee1919"
+        }
+      ]
+    }
+  ]
+}
