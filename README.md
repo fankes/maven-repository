@@ -1,4 +1,4 @@
-# maven-repository-template 
+# maven-repository
 
 [![GitHub license](https://img.shields.io/github/license/HighCapable/maven-repository-template?color=blue)](https://github.com/HighCapable/maven-repository-template/blob/main/LICENSE)
 
