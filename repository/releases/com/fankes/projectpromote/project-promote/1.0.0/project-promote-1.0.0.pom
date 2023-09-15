@@ -12,7 +12,7 @@
   <version>1.0.0</version>
   <packaging>aar</packaging>
   <name>ProjectPromote</name>
-  <description>An integrated dependency on my projects promotion for my own use</description>
+  <description>An integrated dependency on my projects promotion for my own use.</description>
   <url>https://github.com/fankes/ProjectPromote</url>
   <licenses>
     <license>
