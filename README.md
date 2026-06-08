@@ -43,42 +43,33 @@ repositories {
 }
 ```
 
-You can also use [SweetDependency](https://github/HighCapable/SweetDependency) to uniformly manage and set up repositories.
-
-```yaml
-repositories:
-  fankes-maven-releases:
-    url: https://raw.githubusercontent.com/fankes/maven-repository/main/repository/releases
-  fankes-maven-snapshots:
-    url: https://raw.githubusercontent.com/fankes/maven-repository/main/repository/snapshots
-```
-
 #### Introduce Sample Dependency
 
 The notation of the example dependency is `com.fankes.maven-artifact-test:maven-artifact-test`.
 
 It has 2 versions `1.0.0` and `1.0.0-SNAPSHOT`.
 
+> Version Catalog Method
+
+```toml
+[versions]
+maven-artifact-test = "1.0.0"
+
+[libraries]
+maven-artifact-test = { module = "com.fankes.maven-artifact-test:maven-artifact-test", version.ref = "maven-artifact-test" }
+```
+
+```kotlin
+dependencies {
+    implementation(libs.maven.artifact.test)
+}
+```
+
 > Traditional Method
 
 ```kotlin
 dependencies {
     implementation("com.fankes.maven-artifact-test:maven-artifact-test:1.0.0")
-}
-```
-
-> SweetDependency Method
-
-```yaml
-libraries:
-  com.fankes.maven-artifact-test:
-    maven-artifact-test:
-      version: 1.0.0
-```
-
-```kotlin
-dependencies {
-    implementation(com.fankes.maven.artifact.test.maven.artifact.test)
 }
 ```
 
@@ -121,42 +112,33 @@ repositories {
 }
 ```
 
-你还可以使用 [SweetDependency](https://github/HighCapable/SweetDependency) 统一管理并设置存储库。
-
-```yaml
-repositories:
-  fankes-maven-releases:
-    url: https://raw.githubusercontent.com/fankes/maven-repository/main/repository/releases
-  fankes-maven-snapshots:
-    url: https://raw.githubusercontent.com/fankes/maven-repository/main/repository/snapshots
-```
-
 #### 引入示例依赖
 
 示例依赖的 Notation 为 `com.fankes.maven-artifact-test:maven-artifact-test`。
 
 其有两个版本 `1.0.0` 和 `1.0.0-SNAPSHOT`。
 
+> Version Catalog 方式
+
+```toml
+[versions]
+maven-artifact-test = "1.0.0"
+
+[libraries]
+maven-artifact-test = { module = "com.fankes.maven-artifact-test:maven-artifact-test", version.ref = "maven-artifact-test" }
+```
+
+```kotlin
+dependencies {
+    implementation(libs.maven.artifact.test)
+}
+```
+
 > 传统方式
 
 ```kotlin
 dependencies {
     implementation("com.fankes.maven-artifact-test:maven-artifact-test:1.0.0")
-}
-```
-
-> SweetDependency 方式
-
-```yaml
-libraries:
-  com.fankes.maven-artifact-test:
-    maven-artifact-test:
-      version: 1.0.0
-```
-
-```kotlin
-dependencies {
-    implementation(com.fankes.maven.artifact.test.maven.artifact.test)
 }
 ```
 
